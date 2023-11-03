@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family !important;
+}
+
+html,
+body {
+  background: $bg-grey;
+  font-size: $font-size-base-px !important;
+}
+
+
+.bg-success {
+  background-color: $success !important;
+  color: $white;
+}
+.bg-primary {
+  background-color: $primary !important;
+  color: $white;
+}
+
+.bg-danger {
+  background-color: $danger !important;
+  color: $white;
+}
+
+.bg-muted {
+  background-color: $mute !important;
+  color: $white;
+}
+
+.bg-warning {
+  background-color: $warn !important;
+  color: $white;
+}
+
+
+
+
+.text-success {
+  color: $success !important;
+  
+}
+.text-primary {
+  color: $primary !important;
+  
+}
+
+.text-danger {
+  color: $danger !important;
+  
+}
+
+.text-muted {
+  color: $grey1 !important;
+  
+}
+
+.text-warning {
+  color: $warn !important;
+  
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,58 @@
+@import "variables";
+.top-order{
+    margin-bottom: 16px;
+}
+
+.topcard {
+    padding: 14px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+
+    h1 {
+        font-size: 30px;
+        color: $primary;
+        margin-bottom: 6px;
+        font-weight: 500;
+
+    }
+
+    h5 {
+        font-size: 16px;
+        margin-bottom: 4px;
+        font-weight: 500;
+        opacity: 0.9;
+
+    }
+
+    p {
+        font-size: 12px;
+        margin-bottom: 4px;
+        font-weight: normal;
+        opacity: 0.6;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // width: 80%;
+        width: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    .content-icon .fa-square-check {
+        font-size: 32px;
+        opacity: 0.5;
+    }
+}
+
+.topcard-active {
+    background-color: $primary !important;
+    color: $white !important;
+    h1{
+    color: $white !important;
+    }
+}

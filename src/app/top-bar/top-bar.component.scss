@@ -1,0 +1,111 @@
+@import "sideBar";
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav-left {
+    background-color: $primary;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu {
+    width: 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+
+    .search-input {
+        position: relative;
+        background: $white;
+        outline: none;
+        border: none;
+        padding: 8px 8px 8px 30px;
+    }
+
+    .search-input:focus {
+        border: 1px solid $primary;
+        border-radius: 4px;
+    }
+
+    .search-input:hover {
+        border: 1px solid $primary;
+        border-radius: 4px;
+    }
+
+    .search-input::placeholder {
+        font-size: 12px;
+    }
+
+    .search-icon {
+        width: 20px;
+        margin: 4px;
+        position: absolute;
+    }
+}
+
+.language {
+    display: flex;
+    // gap: 2px;
+    text-transform: uppercase;
+    align-items: center;
+
+    p {
+        font-size: 12px;
+        margin-bottom: 0px;
+        color: $black;
+        font-weight: 500;
+    }
+
+    img {
+        width: 18px;
+    }
+}
+
+.profile {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    text-transform: capitalize;
+
+    p {
+        font-size: 12px;
+        margin-bottom: 0px;
+        font-weight: 500;
+        color: $black;
+    }
+
+    img {
+        width: 26px;
+        border-radius: 2px;
+    }
+}
+
+.bell {
+    width: 20px;
+}
+
+.message {
+    width: 20px;
+}
+
+.profile .down-arr {
+    width: 18px;
+}
+
+.topbar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+}

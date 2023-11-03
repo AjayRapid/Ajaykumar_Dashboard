@@ -30,9 +30,22 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss"
+              ]
+            },
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/all.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -93,6 +106,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -100,5 +114,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "bed73b11-0b57-45f1-861b-d1347141df54"
   }
 }

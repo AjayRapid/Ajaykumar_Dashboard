@@ -1,0 +1,118 @@
+@import "variables";
+$vertical-menu-width-sm : 200px;
+
+.navbar.fixed-top {
+    position: fixed;
+    z-index: 1000 !important;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.nav-item img{
+    width: 20px;
+}
+.navbar.page-header {
+    height: 60px;
+    overflow-y: visible;
+    transition: all .3s ease;
+}
+
+.navbar.page-header {
+    background-color: #fff;
+}
+
+.main-container {
+    position: relative;
+    min-height: 100%;
+    margin-top: 60px;
+}
+
+.left-nav {
+    bottom: 0;
+    width: 70px;
+    z-index: 999;
+    background-color: $white;
+}
+
+
+.left-nav-body.left-nav-fixed-top {
+    top: 60px;
+}
+
+
+
+.left-nav-body.left-nav-fixed-bottom,
+.left-nav-body.left-nav-fixed-top {
+    position: fixed;
+    // z-index: 9;
+    width: 70px;
+}
+
+.left-nav-body {
+    width: 100%;
+}
+
+.navbar {
+    // position: sticky;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-nav {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.left-nav-body .nav-item {
+    position: relative;
+    width: 70px;
+    text-align: center;
+    padding: 16px;
+    background: 0 0;
+    color: $grey2;
+    transition: .3s ease;
+}
+
+
+
+.left-nav-body .nav-item .sidebar-sub-dropdown {
+    position: absolute;
+    top: unset;
+    left: 180px;
+    margin-top: -25px;
+    padding: 2px 0;
+    z-index: 1001;
+    display: none;
+    width: 180px;
+    font-weight: 500;
+    color: $grey2;
+    text-align: left;
+    background: lighten($primary, .25%);
+}
+
+
+
+.app-container,
+.min-h-100-50 {
+    min-height: calc(100vh - 50px);
+}
+
+.app-container {
+    margin-left: 70px;
+}
+

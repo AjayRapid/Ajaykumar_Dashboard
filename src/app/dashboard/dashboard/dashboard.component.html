@@ -1,0 +1,43 @@
+<div class="dashboard-wrapper ">
+    <app-top-data-card [cardData]="cardData"></app-top-data-card>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <app-recent-order [orderData]="orderData"></app-recent-order>
+            </div>
+            <div class="col-md-4">
+                <app-new-user-list [userData]="userData"></app-new-user-list>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="new-card">
+                    <h6>Sales Statistics</h6>
+                    <apx-chart [series]="chartOptions?.series" [chart]="chartOptions?.chart"
+                        [xaxis]="chartOptions?.xaxis" [dataLabels]="chartOptions?.dataLabels"
+                        [grid]="chartOptions?.grid" [stroke]="chartOptions?.stroke"
+                        [title]="chartOptions?.title"></apx-chart>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="new-card">
+                    <h6>Balance Overview</h6>
+                    <apx-chart [series]="barchartOptions.series" [chart]="barchartOptions.chart"
+                        [dataLabels]="barchartOptions.dataLabels" [plotOptions]="barchartOptions.plotOptions"
+                        [xaxis]="barchartOptions.xaxis"></apx-chart>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="new-card">
+                    <h6>Top Products</h6>
+                    <div class="d-flex align-items-center h-100">
+                        <apx-chart [series]="donutchartOptions.series" [chart]="donutchartOptions.chart"
+                        [labels]="donutchartOptions.labels" [fill]="donutchartOptions.fill" [dataLabels]="donutchartOptions.dataLabels"
+                        [responsive]="donutchartOptions.responsive"></apx-chart>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

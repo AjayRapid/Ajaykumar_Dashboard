@@ -1,0 +1,41 @@
+<div class="new-card">
+    <h6>Recent Orders</h6>
+    <div class="overflow">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Customer</th>
+                    <th scope="col">Products</th>
+                    <th scope="col">Delivery Date</th>
+                    <th class="text-center" scope="col">Status</th>
+                    <th class="text-center" scope="col">Tracking No#</th>
+                    <th class="text-center" scope="col">Shipping</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of orderData;let i=index;">
+                    <td class="text-muted">{{i<9 ? "0" : "" }}{{i+1}}</td>
+                    <td class="text-muted">{{item?.name}}</td>
+                    <td class="text-muted">{{item?.product}}</td>
+                    <td class="text-muted">{{item?.delivery_date | date : 'MMM d, y'}}</td>
+                    <td class="text-center">
+                        <div class="my-badge" [class.bg-success]="item?.status == 'Paid'"
+                            [class.bg-danger]="item?.status == 'Failed'" [class.bg-muted]="item?.status == 'Pending'">
+                            {{item?.status}}</div>
+                    </td>
+                    <td class="text-muted text-center">#{{item?.tracking_no}}</td>
+                    <td class="text-muted text-center">{{item?.shipping ? "Yes" : "No"}}</td>
+                    <td class="text-muted">
+                        <div (click)="openPopup(item)">
+                            <i class="fas fa-times cursor" ></i>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
